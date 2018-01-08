@@ -1,0 +1,19 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "Kv0rR26jXimpBE2/aGCzWIxYa7A=",
+			"path": "github.com/AstromechZA/pbars",
+			"revision": "fe8dfb7c021dee59d90f947f2d206eb61d0f3cfd",
+			"revisionTime": "2017-04-09T09:50:02Z"
+		},
+		{
+			"checksumSHA1": "ST1NJERZrmNkSrXCAOua2B0x6kk=",
+			"path": "github.com/btm6084/utilities/fileUtil",
+			"revision": "ade672bbfc96ab05baf986830c3d03dc432c304b",
+			"revisionTime": "2018-02-05T20:51:06Z"
+		}
+	],
+	"rootPath": "github.com/btm6084/replace"
+}
