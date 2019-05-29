@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/AstromechZA/pbars"
-	"github.com/btm6084/utilities/fileUtil"
+	"github.com/btm6084/utilities/fileutil"
 )
 
 func main() {
@@ -38,7 +38,7 @@ func main() {
 		ext = fmt.Sprintf(".%s", strings.TrimLeft(args[4], "."))
 	}
 
-	if !fileUtil.IsDir(path) {
+	if !fileutil.IsDir(path) {
 		log.Printf("%s is not a directory\n", path)
 		os.Exit(1)
 	}
@@ -48,11 +48,11 @@ func main() {
 	fmt.Printf("Path:    %s\n", path)
 	fmt.Printf("Filter:  %s\n", ext)
 
-	files := fileUtil.DirToArray(path, fileUtil.DefaultFileFilter)
+	files := fileutil.DirToArray(path, false, fileutil.DefaultFileFilter, fileutil.DefaultDirectoryFilter)
 
 	// Filter to files with ext if it's set.
 	if ext != "" {
-		files = fileUtil.FilterExtWhitelist([]string{ext}, files)
+		files = fileutil.FilterExtWhitelist([]string{ext}, files)
 	}
 
 	// Setup for Progress Bar
